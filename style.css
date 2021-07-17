@@ -1,0 +1,200 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	background-image: url(./Template\ 4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+::placeholder {
+	color: rgb(184, 176, 176);
+
+}
+
+.new {
+	height: 30px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+}
+
+nav {
+	width: 100%;
+	height: 15vh;
+	background: rgba(0, 0, 0, 0.2);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+nav .logo {
+	width: 25%;
+	text-align: center;
+	/*background: red;*/
+}
+
+nav .menu {
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav .menu a {
+	width: 25%;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+nav .menu a:first-child {
+	color: #00b894;
+
+}
+
+main {
+	height: 100%;
+	width: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
+
+section h3 {
+	font-size: 35px;
+	font-weight: 200;
+	letter-spacing: 3px;
+	text-shadow: 1px 1px 2px black;
+}
+
+section p {
+	font-size: 25px;
+	color: #000;
+	white-space: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px rgb(196, 191, 191);
+}
+
+section a {
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+}
+
+section .btnone {
+	background: #D01E69;
+	background-image: -webkit-linear-gradient(top, #D01E69, #3D94F6);
+	background-image: -moz-linear-gradient(top, #D01E69, #3D94F6);
+	background-image: -ms-linear-gradient(top, #D01E69, #3D94F6);
+	background-image: -o-linear-gradient(top, #D01E69, #3D94F6);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	color: #DBD5D8;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: 30;
+	padding: 20px;
+	-webkit-box-shadow: inset 1px 1px 20px 0 #990845;
+	-moz-box-shadow: inset 1px 1px 20px 0 #990845;
+	box-shadow: inset 1px 1px 20px 0 #990845;
+	text-shadow: 1px 1px 20px #000000;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+}
+
+.btnone:hover {
+	border: solid #0059A0 0;
+	background: #3DE5F6;
+	background-image: -webkit-linear-gradient(top, #3DE5F6, #A91ED0);
+	background-image: -moz-linear-gradient(top, #3DE5F6, #A91ED0);
+	background-image: -ms-linear-gradient(top, #3DE5F6, #A91ED0);
+	background-image: -o-linear-gradient(top, #3DE5F6, #A91ED0);
+	background-image: -webkit-gradient(to bottom, #3DE5F6, #A91ED0);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+
+.btn {
+	margin: 30px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 1%;
+	background-image: -webkit-linear-gradient(top, #D01E69, #3D94F6);
+	background-image: -moz-linear-gradient(top, #D01E69, #3D94F6);
+	background-image: -ms-linear-gradient(top, #D01E69, #3D94F6);
+	background-image: -o-linear-gradient(top, #D01E69, #3D94F6);
+}
+
+.btn:after {
+	content: '';
+	animation: changetext 10s infinite linear;
+}
+
+.btn:hover {
+	border: solid #0059A0 0;
+	background: #3DE5F6;
+	background-image: -webkit-linear-gradient(top, #3DE5F6, #A91ED0);
+	background-image: -moz-linear-gradient(top, #3DE5F6, #A91ED0);
+	background-image: -ms-linear-gradient(top, #3DE5F6, #A91ED0);
+	background-image: -o-linear-gradient(top, #3DE5F6, #A91ED0);
+	background-image: -webkit-gradient(to bottom, #3DE5F6, #A91ED0);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+@keyframes changetext {
+	0% {
+		content: " GET STARTED"
+	}
+
+	20% {
+		content: " NOW"
+	}
+
+	35% {
+		content: " HURRY UP!"
+	}
+
+	50% {
+		content: " GET STARTED"
+	}
+
+	60% {
+		content: " NOW"
+	}
+
+	80% {
+		content: " HURRY UP!"
+	}
+
+	100% {
+		content: " GET STARTED"
+	}
+}
